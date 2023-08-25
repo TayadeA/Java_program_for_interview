@@ -1,0 +1,27 @@
+package JavaProgramm;
+
+public class SumOFArray {
+
+	public static void main(String[] args) {
+		int a[]= {5,2,7,9,6};				
+		
+		int sum = 0 ;
+		
+		// Approach 1 : Using for loop 
+		
+		for (int i = 0 ; i<=a.length-1;i++)		//  0 1 2 3 4   //a.length-1=5
+		{
+			sum =sum+a[i];			//5+2+7+9+6  = 
+		}
+		
+		//Approach 2 : Using Enhanced for loop 
+		
+		for (int value : a) {
+			
+			sum = sum+ value ;
+			}		
+		System.out.println("Sum of array elements :"+sum);
+		
+	}
+
+}
